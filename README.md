@@ -76,3 +76,7 @@ Show **linkr** version
 ### remove
 
 Remove symbolic links.
+
+## Contributors
+
++ Jarrett Meyer

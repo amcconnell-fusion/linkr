@@ -7,10 +7,10 @@
     "links"
   ],
   "preferGlobal": true,
-  "repository": "https://github.com/jarrettmeyer/linkr",
+  "repository": "https://github.com/FusionAlliance/linkr",
   "author": "Jarrett Meyer <jarrettmeyer@gmail.com>",
   "bugs": {
-    "url": "https://github.com/jarrettmeyer/linkr/issues"
+    "url": "https://github.com/FusionAlliance/linkr/issues"
   },
   "bin": {
     "linkr": "./bin/linkr"
