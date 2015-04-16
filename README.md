@@ -44,8 +44,8 @@ In your `foo-api/package.json`, add a `links` section under `config`.
   },
   "config": {
     "links": [
-      "../my-project-caching",
-      "../my-project-models"
+      "../foo-caching",
+      "../foo-models"
     ]
   }
 }
