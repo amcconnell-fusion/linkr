@@ -1,5 +1,7 @@
 # linkr
 
+[![Build Status](https://travis-ci.org/jarrettmeyer/linkr.svg?branch=master)](https://travis-ci.org/jarrettmeyer/linkr)
+
 An [npm](https://www.npmjs.com/) package to make managing [npm links](https://docs.npmjs.com/cli/link) easier.
 
 Are you working on a sufficiently large NodeJS project with dependent projects that rely on each other? If so, then you
