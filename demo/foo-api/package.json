@@ -1,0 +1,16 @@
+{
+  "name": "foo-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "foo-caching": "file:../foo-caching",
+    "foo-models": "file:../foo-models"
+  },
+  "config": {
+    "links": [
+      "../foo-caching",
+      "../foo-models"
+    ]
+  }
+}

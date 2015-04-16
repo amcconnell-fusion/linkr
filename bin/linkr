@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+;(function () {
+    var getRunMode = require('../lib/getRunMode');
+    var go = require('../lib/go');
+
+    process.title = 'linkr';
+    var runMode = getRunMode(process.argv);
+    go(runMode);
+})();

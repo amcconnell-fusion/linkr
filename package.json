@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "name": "linkr",
+  "description": "Utility for making npm link easier to work with in development.",
+  "keywords": [
+    "npm",
+    "links"
+  ],
+  "preferGlobal": true,
+  "repository": "https://github.com/jarrettmeyer/linkr",
+  "author": "Jarrett Meyer <jarrettmeyer@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/jarrettmeyer/linkr/issues"
+  },
+  "bin": {
+    "linkr": "./bin/linkr"
+  },
+  "scripts": {
+    "install-local": "npm uninstall -g linkr && npm install -g .",
+    "start": "bin/linkr",
+    "test": "mocha --recursive"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4"
+  }
+}
