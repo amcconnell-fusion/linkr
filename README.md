@@ -9,7 +9,7 @@ are probably using **npm link** to make working with multiple local packages eas
 
 ## Installation
 
-Install **linkr** globally using npm.
+Install **linkr** globally using npm. This may require `sudo` access, depending on your OS.
 
 ```
 $ npm install -g linkr
@@ -19,7 +19,7 @@ $ npm install -g linkr
 
 Let's assume that you have a directory setup similar to the following example. Your `foo-api` project is your primary
 application, and it depends on both `foo-caching` and `foo-models`. While you might have been able to write this as one
-very large Node package, it was decided that there would be value if the `foo-caching` and `foo-models` projects could 
+very large Node package, it was decided that there would be value if the `foo-caching` and `foo-models` projects could
 shared in multiple projects.
 
 ```
@@ -65,6 +65,30 @@ $ linkr
 
 Run all prescribed `npm link`s. This is the default command.
 
+#### sudo may be required
+
+Because `npm link` makes use of the global `node_modules` directory, you may need to run **linkr** as `sudo`. If
+you want to avoid running as sudo, then you need to set up your linked projects independently. Example:
+
+**Running as `sudo`**
+
+```
+/foo/foo-api $ sudo linkr
+```
+
+**Without running as `sudo`**
+
+For this to work, you will need to set up your links configuration with project names, not relative paths.
+
+```
+$ cd path/to/foo-caching
+$ sudo npm link
+$ cd ../foo-models
+$ sudo npm link
+$ cd ../foo-api
+$ linkr
+```
+
 ### help
 
 Show help text.
@@ -82,4 +106,4 @@ Remove symbolic links.
 [![Fusion Alliance Logo](https://avatars0.githubusercontent.com/u/1154219?v=3&u=e1451e6a65343331369d53a2b6e0c7046c2cc810&s=60)](https://github.com/FusionAlliance)
 **linkr** is a product of Fusion Alliance &copy; 2015.
 
-+ [Jarrett Meyer](https://github.com/jarrettmeyer)
++ [Jarrett Meyer](https://github.com/jarrettmeyer) (Author)
