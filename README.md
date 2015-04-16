@@ -79,4 +79,7 @@ Remove symbolic links.
 
 ## Contributors
 
-+ Jarrett Meyer
+[![Fusion Alliance Logo](https://avatars0.githubusercontent.com/u/1154219?v=3&u=e1451e6a65343331369d53a2b6e0c7046c2cc810&s=60)](https://github.com/FusionAlliance)
+**linkr** is a product of Fusion Alliance &copy; 2015.
+
++ [Jarrett Meyer](https://github.com/jarrettmeyer)
