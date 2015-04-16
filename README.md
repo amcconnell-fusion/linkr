@@ -49,7 +49,8 @@ In your `foo-api/package.json`, add a `links` section under `config`.
 }
 ```
 
-In your development environment, you will want to use symbolic links.
+In your development environment, you will want to use symbolic links. You can now run **linkr** from the project
+root (i.e. the same folder that contains the `package.json` file).
 
 ```
 $ cd path/to/foo/foo-api

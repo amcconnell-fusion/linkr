@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "name": "linkr",
-  "description": "Utility for making npm link easier to work with in development.",
+  "description": "Utility for making npm link easier",
   "keywords": [
     "npm",
     "links"
